@@ -13,22 +13,21 @@ import Footer from './Components/Footer'
 import TimeLine from './Components/TimeLine'
 import Loader from './Components/loader'
 import StartupForm from './Components/Form'
+import ImageSlider from './Components/ImageSlider'
+import { Route, Routes } from 'react-router-dom'
+import Home from './Components/Home'
+import Thanks from './Components/thanks'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
 <>
-<Loader/>
-<Navbar/>
-<Banner/>
-<About/>
-<Who_Apply/>
-<Why_Choose_Us/>
-<Venue/>
-<TimeLine/>
-<StartupForm/>
-<Footer/>
+{/* <Loader/> */}
+<Routes>
+            <Route path="/" element={<Home />} />
+<Route path= "/thanks" element = {<Thanks/>}/>
+</Routes>
 </>
   )
 }

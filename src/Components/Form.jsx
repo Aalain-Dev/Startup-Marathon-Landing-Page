@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const StartupForm = () => {
+    const navigate = useNavigate();
   const [formData, setFormData] = useState({
     founderName: "",
     email: "",
@@ -50,8 +52,11 @@ const StartupForm = () => {
           body: data,
         }
       );
+      if (response) {
+          navigate("/thanks");
 
-      if (!response.ok) throw new Error("Failed to submit form");
+      }
+      // if (!response.ok) throw new Error("Failed to submit form");
 
       let result;
       try {
@@ -61,7 +66,7 @@ const StartupForm = () => {
       }
 
       setMessage("✅ Form submitted successfully!");
-      console.log("API Response:", result);
+      // console.log("API Response:", result);
 
       setFormData({
         founderName: "",
@@ -87,7 +92,7 @@ const StartupForm = () => {
       setLoading(false);
     }
   };
-console.log(formData);
+  console.log(formData);
 
   return (
     <div className="max-w-2xl mx-auto p-6 bg-white rounded-xl shadow-md">
@@ -169,7 +174,7 @@ console.log(formData);
         {/* Startup Stage */}
         <div className="flex flex-col">
           <label htmlFor="fundingask" className="font-medium mb-1">
-             Funding Ask
+            Funding Ask
           </label>
           <input
             type="text"
