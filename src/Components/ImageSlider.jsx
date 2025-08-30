@@ -19,41 +19,36 @@ const ImageSlider = () => {
   ];
 
   const settings = {
-    dots: false,              // show navigation dots
-    infinite: true,          // infinite loop
-    speed: 600,              // animation speed (ms)
-    slidesToShow: 4,         // show 4 images at once
-    slidesToScroll: 1,
-    autoplay: true,          // 🔥 auto slide
-    autoplaySpeed: 2500,     // time between slides (ms)
-    pauseOnHover: true,      // pause when mouse is over
-    responsive: [
-      {
-        breakpoint: 1024,   // tablet
-        settings: {
-          slidesToShow: 3,
-        }
+  dots: false,
+  infinite: true,
+  speed: 600,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2500,
+  pauseOnHover: true,
+  responsive: [
+    {
+      breakpoint: 1024, // tablet / small laptop
+      settings: {
+        slidesToShow: 3,
       },
-      {
-        breakpoint: 1000,   // tablet
-        settings: {
-          slidesToShow: 2,
-        }
+    },
+    {
+      breakpoint: 768, // large mobile
+      settings: {
+        slidesToShow: 1,
       },
-      {
-        breakpoint: 768,    // mobile
-        settings: {
-          slidesToShow: 2,
-        }
+    },
+    {
+      breakpoint: 480, // small mobile
+      settings: {
+        slidesToShow: 1,
       },
-      {
-        breakpoint: 480,    // small mobile
-        settings: {
-          slidesToShow: 1,
-        }
-      }
-    ]
-  };
+    },
+  ],
+};
+
 
   return (
     <div className="container">
@@ -64,7 +59,7 @@ const ImageSlider = () => {
             <img
               src={img}
               alt={`slide-${idx}`}
-              className="rounded-xl w-full h-64 object-cover "
+              className="rounded-xl w-full object-cover "
             />
           </div>
         ))}

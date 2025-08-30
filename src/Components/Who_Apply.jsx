@@ -18,8 +18,8 @@ const Who_Apply = () => {
 
   AOS.init();
   return (
-    <div className="bg-[#5B60CA] ">
-      <div className="container mx-auto p-6 ">
+    <div className="bg-[#5B60CA] p-6 ">
+      <div className="container mx-auto  ">
         <h2 className="text-center text-white text-3xl mb-5 font-bold">
           Who Should Apply
         </h2>
