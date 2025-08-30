@@ -29,7 +29,7 @@ const Who_Apply = () => {
             return (
               <div
                 key={index}
-                className="bg-white rounded-lg flex items-center shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+                className="bg-white rounded-lg justify-center flex items-center shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="p-4">
                   <h3 className="xl:text-xl text-lg font-bold text-gray-800 mb-2 text-center">

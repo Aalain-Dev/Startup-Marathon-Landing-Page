@@ -19,7 +19,7 @@ const Home = () => {
 <Who_Apply/>
 <Why_Choose_Us/>
 <Venue/>
-{/* <ImageSlider/> */}
+<ImageSlider/>
 <TimeLine/>
 <StartupForm/>
 <Footer/>
