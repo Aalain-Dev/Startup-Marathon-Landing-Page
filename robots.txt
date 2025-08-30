@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://startupmarathon.bizdateup.com/sitemap.xml
