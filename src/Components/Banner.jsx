@@ -6,7 +6,7 @@ import SplitText from "../Components/GSAP/SplitText";
 import main from "../Images/main.png";
 import strip from "../Images/strip.png"; // Assuming you have a strip image
 
-const Banner = () => {
+const Banner = ({onScrollToForm }) => {
   const handleAnimationComplete = () => {
     console.log("All letters have animated!");
   };
@@ -83,9 +83,8 @@ const Banner = () => {
 
           <button className="bg-white text-black px-3 py-2 rounded-2xl text-lg font-bold cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-lg hover:bg-gray-100">
             <a
-              href="https://calendly.com/puneet-bizdateup/startup-marathon-x-bizdateup?utm_source=Facebook&utm_medium=Paid&utm_campaign=StartupMarathon"
-              target="_blank"
-              rel="noopener noreferrer"
+ onClick={onScrollToForm}
+rel="noopener noreferrer"
             >
               <span className="flex flex-row gap-2 items-center">
                  Apply Now  <FaArrowRightLong />

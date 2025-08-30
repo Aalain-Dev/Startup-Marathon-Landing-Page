@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import VariableProximity from "./GSAP/VariableProximity";
 import image from "../Images/about.png";
-const About = () => {
+const About = ({onScrollToForm }) => {
   return (
     <>
       <div>
@@ -39,8 +39,8 @@ Per Startup Funding Potential: Up to ₹8 Cr (USD $500K–$1M)
             </ul>
             <button className="bg-[#5B60CA] text-white px-5 rounded-lg py-2 mt-5 text-xl font-bold">
               <a
-                target="_blank"
-                href="https://calendly.com/puneet-bizdateup/startup-marathon-x-bizdateup?utm_source=Facebook&utm_medium=Paid&utm_campaign=StartupMarathon"
+                 onClick={onScrollToForm}
+                 className = "cursor-pointer"
               >
                Apply Now
               </a>

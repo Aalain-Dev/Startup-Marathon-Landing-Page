@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Navbar = () => {
+const Navbar = ({ onScrollToForm }) => {
   return (
     <>
  <nav className="w-full px-6 py-4 flex items-center xl:flex-row lg:flex-row md:flex-row sm:flex-row flex-col gap-6 justify-between bg-[#5B60CA] shadow-md">
@@ -16,11 +16,9 @@ const Navbar = () => {
 
       {/* Button */}
       <div>
-       <button className="bg-white text-black px-2 py-2 font-bold rounded-lg text-xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-lg hover:bg-gray-100">
-  <a href="https://calendly.com/puneet-bizdateup/startup-marathon-x-bizdateup?utm_source=Facebook&utm_medium=Paid&utm_campaign=StartupMarathon" target="_blank" rel="noopener noreferrer">
+       {/* <button className="bg-white text-black px-2 py-2 font-bold rounded-lg text-xl cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-lg hover:bg-gray-100"    onClick={onScrollToForm}> 
     Book Your Slot Now
-  </a>
-</button>
+</button> */}
 
       </div>
       </div>

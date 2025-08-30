@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Navbar from './Navbar'
 import Banner from './Banner'
 import About from './About'
@@ -11,17 +11,27 @@ import Footer from './Footer'
 import Who_Apply from './Who_Apply'
 
 const Home = () => {
+    const formRef = useRef(null);
+
+  const scrollToForm = () => {
+    if (formRef.current) {
+      formRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
    <>
-   <Navbar/>
-<Banner/>
-<About/>
+   <Navbar />
+<Banner  onScrollToForm={scrollToForm}/>
+<About onScrollToForm={scrollToForm}/>
 <Who_Apply/>
 <Why_Choose_Us/>
 <Venue/>
 <ImageSlider/>
 <TimeLine/>
-<StartupForm/>
+ <div ref={formRef}>
+       <StartupForm/>
+     </div>
 <Footer/>
    </>
   )
