@@ -183,6 +183,8 @@ const StartupForm = () => {
             value={formData.fundingask}
             onChange={handleChange}
             className="border p-2 rounded"
+            required
+
           />
         </div>
 
@@ -213,6 +215,8 @@ const StartupForm = () => {
             value={formData.traction}
             onChange={handleChange}
             className="border p-2 rounded"
+            required
+
           >
             <option value="">Select Traction</option>
             <option value="0-1 cr">0-1 cr</option>
@@ -252,6 +256,8 @@ const StartupForm = () => {
             value={formData.city}
             onChange={handleChange}
             className="border p-2 rounded"
+            required
+
           />
         </div>
 
@@ -265,6 +271,8 @@ const StartupForm = () => {
             id="industry"
             value={formData.industry}
             onChange={handleChange}
+            required
+
             className="border p-2 rounded"
           >
             <option value="">Select Startup Industry</option>
@@ -296,6 +304,8 @@ const StartupForm = () => {
             onChange={handleChange}
             className="border p-2 rounded"
             rows="3"
+            required
+
           />
         </div>
 
@@ -309,6 +319,8 @@ const StartupForm = () => {
             id="fundingStage"
             value={formData.fundingStage}
             onChange={handleChange}
+            required
+
             className="border p-2 rounded"
           >
             <option value="">Select Funding Stage</option>
@@ -330,6 +342,8 @@ const StartupForm = () => {
             id="raisedFundsBefore"
             value={formData.raisedFundsBefore}
             onChange={handleChange}
+            required
+
             className="border p-2 rounded"
           >
             <option value="">Select</option>
