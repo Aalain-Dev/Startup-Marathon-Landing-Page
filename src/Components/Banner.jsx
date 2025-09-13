@@ -64,7 +64,7 @@ const Banner = ({onScrollToForm }) => {
                   <FaLocationDot />
                 </span>
                 <h3 className="text-lg font-semibold mr-2">
-                 To be announced
+                 BizDateUp Head Office (Mumbai)
                 </h3>
               </div>
               <div className="flex ">

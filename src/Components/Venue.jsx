@@ -19,7 +19,7 @@ const Venue = () => {
 </p>
 <p className='text-center xl:text-2xl text-xl'>📅 8th to 13th September 2025
 </p>
-<p className='text-center xl:text-2xl text-xl'>📍 To be announced
+<p className='text-center xl:text-2xl text-xl'>📍 BizDateUp Head Office (Mumbai)
 </p>
 <span className=' font-bold underline text-2xl w-[200px] mx-auto text-white text-center'>
 {/* <a  target='_blank' className = "text-center text-2xl font-bold " className=''>View In Maps</a> */}
